@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  browser:
+    container_name: browser
+    build:
+      context: .
+      args:
+        UID: 1000
+        GID: 1000
+    image: filebrowser:2.0.2
+    network_mode: host
+    restart: unless-stopped
+    volumes:
+      - /home/user/browser/root:/browser/root
+      - /home/user/browser/branding:/browser/branding
+      - /home/user/browser/database.db:/browser/database.db

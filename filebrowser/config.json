@@ -1,0 +1,8 @@
+{
+  "address": "127.0.0.1",
+  "port": 8080,
+  "baseURL": "/",
+  "root": "/browser/root",
+  "database": "/browser/database.db",
+  "log": "stdout"
+}
